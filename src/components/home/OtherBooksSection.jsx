@@ -30,8 +30,9 @@ const OtherBooksSection = () => {
         {/* best sellers */}
         <motion.div
           variants={animateFromYbottom}
+          viewport={{ once: false, amount: 0.1 }}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           exit="hidden"
           className="grid grid-cols-2 lg:grid-cols-4 gap-10">
           {displayedBooks.map((displayedBook) => (

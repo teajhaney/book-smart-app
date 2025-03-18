@@ -9,8 +9,9 @@ const HeroSection = () => {
       <div className="bodyContent grid grid-cols-1 md:grid-cols-2 justify-center gap-5">
         <motion.div
           variants={animateFromXleft}
+          viewport={{ once: false, amount: 0.1 }}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           exit="hidden">
           <div className="flex flex-col max-md:items-center gap-5 sectionHeadings">
             <h1 className="text-3xl font-bold ">
@@ -27,8 +28,9 @@ const HeroSection = () => {
         {/* banner */}
         <motion.div
           variants={animateFromXright}
+          viewport={{ once: false, amount: 0.1 }}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           exit="hidden">
           <div className="flex justify-center">
             <div className="h-62 w-fit rounded-lg">

@@ -1,18 +1,18 @@
 export const books = [
   {
-    bookPrice:62.00,
+    bookPrice: 62.0,
     id: "651a501746a92da7981902f7",
     bookTitle: "The Maid",
     authorName: "Nita Prose",
     imageURL:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1643228739i/55196813.jpg",
     category: "Mystery",
-bookDescription:
+    bookDescription:
       "Since Gran died a few months ago, twenty-five-year-old Molly has been navigating life's complexities all by herself. No matter—she throws herself with gusto into her work as a hotel maid. Her unique character, along with her obsessive love of cleaning and proper etiquette, make her an ideal fit for the job. She delights in donning her crisp uniform each morning, stocking her cart with miniature soaps and bottles, and returning guest rooms at the Regency Grand Hotel to a state of perfection.",
     bookPDFURL: "https://www.goodreads.com/book/show/55196813-the-maid",
   },
   {
-    bookPrice:72.12,
+    bookPrice: 72.12,
     id: "651a50b146a92da7981902f8",
     bookTitle: "Carrie Soto Is Back",
     authorName: "Taylor Jenkins",
@@ -25,7 +25,7 @@ bookDescription:
       "https://www.goodreads.com/book/show/60435878-carrie-soto-is-back",
   },
   {
-    bookPrice:2.99,
+    bookPrice: 2.99,
     id: "651a50f946a92da7981902f9",
     bookTitle: "House of Sky",
     authorName: "Sarah J. Maas",
@@ -38,7 +38,7 @@ bookDescription:
       "https://www.goodreads.com/book/show/40132775-house-of-sky-and-breath",
   },
   {
-    bookPrice:32.00,
+    bookPrice: 32.0,
     id: "651a513a46a92da7981902fa",
     bookTitle: "Book Lovers",
     authorName: "Emily Henry",
@@ -50,7 +50,7 @@ bookDescription:
     bookPDFURL: "https://www.goodreads.com/book/show/58690308-book-lovers",
   },
   {
-    bookPrice:32.92,
+    bookPrice: 32.92,
     id: "651a517346a92da7981902fb",
     bookTitle: "Sea of Tranquility",
     authorName: "Emily St. John",
@@ -63,7 +63,7 @@ bookDescription:
       "https://www.goodreads.com/book/show/58446227-sea-of-tranquility",
   },
   {
-    bookPrice:32.00,
+    bookPrice: 32.0,
     id: "651a51b646a92da7981902fc",
     bookTitle: "Hidden Pictures",
     authorName: "Jason Rekulak",
@@ -75,7 +75,7 @@ bookDescription:
     bookPDFURL: "https://www.goodreads.com/book/show/58724923-hidden-pictures",
   },
   {
-    bookPrice:3.00,
+    bookPrice: 3.0,
     id: "651a51fd46a92da7981902fd",
     bookTitle: "Bad Gays: A Homosexual History",
     authorName: "Huw Lemmey",
@@ -87,7 +87,7 @@ bookDescription:
     bookPDFURL: "https://www.goodreads.com/book/show/59012057-bad-gays",
   },
   {
-    bookPrice:12.34,
+    bookPrice: 12.34,
     id: "651a526046a92da7981902fe",
     bookTitle: "Heartstopper: Volume Four",
     authorName: "Alice Oseman",
@@ -99,7 +99,7 @@ bookDescription:
     bookPDFURL: "https://www.goodreads.com/book/show/56060300-heartstopper",
   },
   {
-    bookPrice:23.00,
+    bookPrice: 23.0,
     id: "651a52a746a92da7981902ff",
     bookTitle: "Lessons in Chemistry",
     authorName: "Bonnie Garmus",
@@ -112,7 +112,7 @@ bookDescription:
       "https://www.goodreads.com/book/show/58065033-lessons-in-chemistry",
   },
   {
-    bookPrice:23.92,
+    bookPrice: 23.92,
     id: "651a52ec46a92da798190300",
     bookTitle: "I’m Glad My Mom Died",
     authorName: "Jennette McCurdy",
@@ -125,7 +125,7 @@ bookDescription:
       "https://www.goodreads.com/book/show/59366244-i-m-glad-my-mom-died",
   },
   {
-    bookPrice:39.00,
+    bookPrice: 39.0,
     id: "651a535346a92da798190301",
     bookTitle: "The Final Gambit",
     authorName: "Jennifer Lynn Barnes",
@@ -137,7 +137,7 @@ bookDescription:
     bookPDFURL: "https://www.goodreads.com/book/show/59233594-the-final-gambit",
   },
   {
-    bookPrice:11.00,
+    bookPrice: 11.0,
     id: "651a53a046a92da798190302",
     bookTitle: "The Dark Queens",
     authorName: "Shelley Puhak",
@@ -150,21 +150,25 @@ bookDescription:
   },
 ];
 
-
 export const animateFromXright = {
-  hidden: { opacity: 0, x: 50 }, // Start hidden with opacity 0, slightly to the right
+  hidden: { opacity: 0, x: 30 }, // Start hidden with opacity 0, slightly to the right
   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }, // Slide in smoothly
 };
 export const animateFromXleft = {
-  hidden: { opacity: 0, x: -50 }, // Start hidden with opacity 0, slightly to the right
+  hidden: { opacity: 0, x: -30 }, // Start hidden with opacity 0, slightly to the right
   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }, // Slide in smoothly
 };
 
 export const animateFromYbottom = {
-  hidden: { opacity: 0, y: 50 }, // Start hidden with opacity 0, slightly to the right
+  hidden: { opacity: 0, y: 30 }, // Start hidden with opacity 0, slightly to the right
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Slide in smoothly
 };
 export const animateFromYtop = {
-  hidden: { opacity: 0, y: 50 }, // Start hidden with opacity 0, slightly to the right
+  hidden: { opacity: 0, y: 30 }, // Start hidden with opacity 0, slightly to the right
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Slide in smoothly
 };
+
+export const companyInfos = ["About", "Careers", "Brand Center", "Blog"];
+export const helpCenters = ["Discord", "servers", "Facebook", "Contact Us"];
+export const legals = ["Private Policy", "Licencing", "Terms and condition"];
+export const downloads = ["ios", "Android", "Windows", "MacOs"];

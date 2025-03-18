@@ -8,8 +8,8 @@ const BookContainer = ({ image, title, authorName, price, onClick }) => {
       </div>
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
-          <h1 className="font-bold">{title}</h1>
-          <h1>{authorName}</h1>
+          <h1 className="max-md:text-sm font-bold">{title}</h1>
+          <h1 className="text-xs">{authorName}</h1>
         </div>
         <h1 className="text-primary">$ {price.toFixed(2)}</h1>
       </div>
