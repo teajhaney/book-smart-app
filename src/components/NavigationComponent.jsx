@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const NavigationComponent = () => {
   return (
-    <nav className="bg-secondary h-14 flex items-center ">
+    <nav className=" bg-secondary h-14 flex items-center ">
       <div className="bodyContent w-full flex justify-between items-center text-textColor">
         {/* logo */}
         <div className="flex gap-3 justify-between items-center text-3xl text-primary font-bold">

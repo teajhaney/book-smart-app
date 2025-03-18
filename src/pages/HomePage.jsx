@@ -1,12 +1,11 @@
 import React from "react";
-
+import { HeroSection, BestBookSection } from "../components/ExportComponents";
 const HomePage = () => {
   return (
-    <div className="w-full bg-secondary py-20">
-      <div className="bodyContent grid grid-cols-1 md:grid-cols-2">
-        div
-      </div>
-    </div>
+    <main>
+      <HeroSection />
+      <BestBookSection />
+    </main>
   );
 };
 

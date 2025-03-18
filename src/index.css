@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @theme {
-  --color-primary: #235789;
+  --color-primary: #3B28CC;
   --color-secondary: #54defd;
   --color-background: #fffbfa;
   --color-tertiary: #040303;
   --color-textColor: #020100;
+  --color-accents:#D7D6D6;
 }
 /* Custom Utility Classes */
 @layer utilities {
@@ -12,6 +13,6 @@
     @apply mx-3 2xl:mx-auto 2xl:w-[1270px];
   }
   .sectionHeadings {
-    @apply font-semibold text-xl;
+    @apply text-textColor font-bold text-3xl;
   }
 }

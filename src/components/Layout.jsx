@@ -6,7 +6,7 @@ import {
 } from "../components/ExportComponents";
 const Layout = () => {
   return (
-    <div>
+    <div className="relative">
       <ScrollToTop />
       <NavigationComponent />
       <Outlet />

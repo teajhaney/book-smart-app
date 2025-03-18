@@ -3,7 +3,11 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./components/ExportComponents.jsx";
-import { HomePage, NotFoundPage } from "./pages/ExportPages.jsx";
+import {
+  HomePage,
+  NotFoundPage,
+  BookDetailsPage,
+} from "./pages/ExportPages.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +18,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
         errorElement: <NotFoundPage />,
       },
+      { path: "/book-details-page", element: <BookDetailsPage /> },
     ],
   },
 ]);
