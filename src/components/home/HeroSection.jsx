@@ -1,6 +1,7 @@
-/* eslint-disable no-unused-vars */
+
 import React from "react";
 import { animateFromXright, animateFromXleft } from "../../constants";
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 const HeroSection = () => {
   return (

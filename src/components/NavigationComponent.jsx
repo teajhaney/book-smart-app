@@ -8,10 +8,12 @@ const NavigationComponent = () => {
     <nav className=" bg-secondary h-14 flex items-center ">
       <div className="bodyContent w-full flex justify-between items-center text-textColor">
         {/* logo */}
-        <div className="flex gap-3 justify-between items-center text-3xl text-primary font-bold">
-          <GiBlackBook />
-          <h1>BookSmart</h1>
-        </div>
+        <NavLink to='/'>
+          <div className="flex gap-3 justify-between items-center text-3xl text-primary font-bold">
+            <GiBlackBook />
+            <h1>BookSmart</h1>
+          </div>
+        </NavLink>
         {/* navigation link */}
         <ul className="flex gap-5 items-center justify-center text-textColor font-bold max-md:hidden ">
           <NavLink
