@@ -7,6 +7,7 @@ import {
   HomePage,
   NotFoundPage,
   BookDetailsPage,
+  PaymentPage,
 } from "./pages/ExportPages.jsx";
 
 const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
         errorElement: <NotFoundPage />,
       },
       { path: "/book-details-page", element: <BookDetailsPage /> },
+      { path: "payment-page", element: <PaymentPage /> },
     ],
   },
 ]);

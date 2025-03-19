@@ -2,12 +2,17 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { animateFromXleft,animateFromXright } from "../constants.jsx";
+import { animateFromXleft, animateFromXright } from "../constants.jsx";
 import { ButtonComponent } from "../components/ExportComponents.jsx";
-
+import { useNavigate } from "react-router-dom";
 const BookDetailsPage = () => {
   const location = useLocation();
   const book = location.state?.books;
+
+  const navigate = useNavigate();
+  const handlePaymentNavigation = (books) => {
+    navigate("/payment-page", { state: { books } });
+  };
   return (
     <section className="h-fit">
       <div className="bodyContent py-20 flex flex-col gap-10 lg:flex-row  h-fit">
@@ -52,12 +57,12 @@ const BookDetailsPage = () => {
           </h1>
           <h1 className="text-primary">
             {" "}
-            <span className="font-bold text-textColor">Price: </span>
-            ${book.bookPrice}
+            <span className="font-bold text-textColor">Price: </span>$
+            {book.bookPrice}
           </h1>
           {/* buttons */}
           <div className="flex gap-5">
-            <ButtonComponent text={"Buy now"} className={"bg-primary"} />
+            <ButtonComponent text={"Buy now"} className={"bg-primary"} onClick={()=>handlePaymentNavigation(book)} />
             <ButtonComponent
               text={"Read pdf"}
               className={"bg-tertiary"}

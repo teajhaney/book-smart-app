@@ -1,9 +1,10 @@
 import React from "react";
 import { companyInfos, legals, downloads, helpCenters } from "../constants";
+import { FaRegCopyright } from "react-icons/fa6";
 
 const FooterSection = () => {
   return (
-    <footer className="bg-tertiary py-10">
+    <footer className="bg-tertiary py-10 flex flex-col gap-5">
       <div className="bodyContent grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-footerText/50">
         {/* 1 */}
         <div className="flex flex-col gap-2">
@@ -33,6 +34,11 @@ const FooterSection = () => {
             <h1 className="text-sm">{download}</h1>
           ))}
         </div>
+          </div>
+          <hr className="border-t border-t-footerText/50" />
+      <div className="flex justify-center items-center gap-2">
+        <FaRegCopyright className="text-sm text-footerText/50" />
+        <p className="text-sm text-footerText/50">2025</p>
       </div>
     </footer>
   );
