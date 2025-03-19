@@ -9,33 +9,41 @@ const FooterSection = () => {
         {/* 1 */}
         <div className="flex flex-col gap-2">
           <h1 className="text-lg font-semibold">COMPANY</h1>
-          {companyInfos.map((companyInfo) => (
-            <h1 className="text-sm">{companyInfo}</h1>
+          {companyInfos.map((companyInfo, index) => (
+            <h1 key={index} className="text-sm">
+              {companyInfo}
+            </h1>
           ))}
         </div>
         {/* 2 */}
         <div className="flex flex-col gap-2">
           <h1 className="text-lg font-semibold">HELP CENTER</h1>
-          {helpCenters.map((helpCenter) => (
-            <h1 className="text-sm">{helpCenter}</h1>
+          {helpCenters.map((helpCenter, index) => (
+            <h1 key={index} className="text-sm">
+              {helpCenter}
+            </h1>
           ))}
         </div>
         {/* 3 */}
         <div className="flex flex-col gap-2">
           <h1 className="text-lg font-semibold">LEGAL</h1>
-          {legals.map((legal) => (
-            <h1 className="text-sm">{legal}</h1>
+          {legals.map((legal, index) => (
+            <h1 key={index} className="text-sm">
+              {legal}
+            </h1>
           ))}
         </div>
-        {/* 1 */}
+        {/* 4 */}
         <div className="flex flex-col gap-2">
           <h1 className="text-lg font-semibold">DOWNLOAD</h1>
-          {downloads.map((download) => (
-            <h1 className="text-sm">{download}</h1>
+          {downloads.map((download, index) => (
+            <h1 key={index} className="text-sm">
+              {download}
+            </h1>
           ))}
         </div>
-          </div>
-          <hr className="border-t border-t-footerText/50" />
+      </div>
+      <hr className="border-t border-t-footerText/50" />
       <div className="flex justify-center items-center gap-2">
         <FaRegCopyright className="text-sm text-footerText/50" />
         <p className="text-sm text-footerText/50">2025</p>
