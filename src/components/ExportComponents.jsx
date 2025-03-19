@@ -1,4 +1,4 @@
-export { default as Layout } from "./layout.jsx";
+export { default as Layout } from "./Layout.jsx";
 export { default as ScrollToTop } from "./ScrollToTop.jsx";
 export { default as NavigationComponent } from "./NavigationComponent.jsx";
 export { default as HeroSection } from "./home/HeroSection.jsx";
