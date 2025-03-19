@@ -5,7 +5,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 const FooterSection = () => {
   return (
     <footer className="bg-tertiary py-10 flex flex-col gap-5 h-full">
-      <div className="bodyContent grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-footerText/50">
+      <div className="bodyContent grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-white">
         {/* 1 */}
         <div className="flex flex-col gap-2">
           <h1 className="text-lg font-semibold">COMPANY</h1>
@@ -44,9 +44,9 @@ const FooterSection = () => {
         </div>
       </div>
       <hr className="border-t border-t-footerText/50" />
-      <div className="flex justify-center items-center gap-2">
-        <FaRegCopyright className="text-sm text-footerText/50" />
-        <p className="text-sm text-footerText/50">2025</p>
+      <div className="flex justify-center items-center gap-2 text-white">
+        <FaRegCopyright className="text-sm" />
+        <p className="text-sm">2025</p>
       </div>
     </footer>
   );
