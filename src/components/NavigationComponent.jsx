@@ -2,13 +2,28 @@ import React from "react";
 import { GiBlackBook } from "react-icons/gi";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const NavigationComponent = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className=" bg-secondary h-14 flex items-center ">
+    <nav
+      className={`fixed top-0 left-0 w-full h-14 flex items-center transition-all duration-300 z-50 ${
+        isScrolled ? "bg-secondary bg-opacity-75 not-last:shadow-md" : "bg-secondary"
+      }`}>
       <div className="bodyContent w-full flex justify-between items-center text-textColor">
         {/* logo */}
-        <NavLink to='/'>
+        <NavLink to="/">
           <div className="flex gap-3 justify-between items-center text-3xl text-primary font-bold">
             <GiBlackBook />
             <h1>BookSmart</h1>

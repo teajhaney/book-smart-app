@@ -7,10 +7,12 @@ import {
 } from "../components/ExportComponents";
 const Layout = () => {
   return (
-    <div className="relative">
+    <div className="relative flex flex-col min-h-screen">
       <ScrollToTop />
       <NavigationComponent />
-      <Outlet />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
       <FooterSection />
     </div>
   );

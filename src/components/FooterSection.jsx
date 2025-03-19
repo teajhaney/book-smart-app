@@ -4,7 +4,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 
 const FooterSection = () => {
   return (
-    <footer className="bg-tertiary py-10 flex flex-col gap-5">
+    <footer className="bg-tertiary py-10 flex flex-col gap-5 h-full">
       <div className="bodyContent grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-footerText/50">
         {/* 1 */}
         <div className="flex flex-col gap-2">
