@@ -48,7 +48,7 @@ const FooterSection = () => {
         <FaRegCopyright className="text-sm" />
         <p className="text-sm">2025</p>
         <a className="text-sm hover:underline hover:decoration-primary hover:text-primary" href="https://github.com/teajhaney" target="_blank" rel="noreferrer"> Github @teajhaney</a>
-     
+
       </div>
     </footer>
   );

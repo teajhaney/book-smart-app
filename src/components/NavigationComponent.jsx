@@ -64,7 +64,7 @@ const NavigationComponent = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="bodyContent w-full flex justify-between items-center text-textColor">
+      <div className="bodyContent w-full flex max-md:justify-between  items-center text-textColor">
         {/* logo */}
         <NavLink to="/">
           <div className="flex gap-3 justify-between items-center text-3xl text-primary font-bold">
@@ -73,7 +73,7 @@ const NavigationComponent = () => {
           </div>
         </NavLink>
         {/* navigation link */}
-        <ul className="flex gap-5 items-center justify-center text-textColor font-bold max-md:hidden ">
+        <ul className="flex gap-5 items-center justify-center text-textColor font-bold max-md:hidden w-full ">
           <NavLink
             to={"/"}
             className={({ isActive }) => (isActive ? "text-primary" : "")}>
@@ -92,7 +92,7 @@ const NavigationComponent = () => {
           </li>
         </ul>
         {/* menu */}
-        <div className="flex gap-3 items-center text-3xl text-primary font-bold">
+        <div className="flex gap-3 items-center text-3xl text-primary font-bold md:hidden">
           {isMenu ? (
             <RxCross2 onClick={handleMenuClick} className="cursor-pointer" />
           ) : (
